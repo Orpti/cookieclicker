@@ -20,6 +20,10 @@ setInterval(function() {
 
 }, 500); 
 
+function tapNews() { if (Game.TickerEffect && Game.TickerEffect.type == 'fortune') { Game.tickerL.click(); } }
+
+setInterval(function () { tapNews(); }, 3000);
+
 window.autoClicker=setInterval(function(){Game.ClickCookie();Game.lastClick=(new Date().getTime())-(1000/50)},0);  
 
 for (let i in Game.Upgrades) { 
@@ -31,6 +35,8 @@ for (let i in Game.Upgrades) {
   } 
 
 } 
+
+Game.RemoveAcheiv(Game.Acheivements['Third-party'])
 
 let isRunning = true; 
 
