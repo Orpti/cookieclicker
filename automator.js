@@ -36,7 +36,7 @@ for (let i in Game.Upgrades) {
 
 } 
 
-Game.RemoveAcheiv(Game.Acheivements['Third-party'])
+Game.RemoveAchiev(Game.Acheivements['Third-party'])
 
 let isRunning = true; 
 
